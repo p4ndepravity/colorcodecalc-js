@@ -1,13 +1,3 @@
-$(document).ready(function(){
-  $('.tooltip-class').tooltip({
-    selector: '[data-toggle=tooltip]',
-    container: 'body'
-  })
-  $('.band_btn').on('click', function(){
-    console.log($(this).text())
-    add_band($(this).text())
-  })
-})
 
 bands = []
 
@@ -16,14 +6,14 @@ function band_btns(){
   for(band in static_bands){
     if(bands.length<2){
       if(band != 'gold' && band != 'silver'){
-        html_string += '<li><span class="btn btn-default btn-block band_btn" style="color: '+band+';">'+band+'</span></li>\n'
+        html_string += '<li><span class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</span></li>\n'
       }
     } else if(bands.length == 3){
       if(band != 'black' && band != 'orange' && band != 'white'){
-        html_string += '<li><span class="btn btn-default btn-block band_btn" style="color: '+band+';">'+band+'</span></li>\n'
+        html_string += '<li><span class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</span></li>\n'
       }
     } else {
-      html_string += '<li><span class="btn btn-default btn-block band_btn" style="color: '+band+';">'+band+'</span></li>\n'
+      html_string += '<li><span class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</span></li>\n'
     }
   }
   return html_string
@@ -108,3 +98,12 @@ function reset(){
   CalculateOhmValue()
   return
 }
+
+$(document).ready(function(){
+  
+  $('.tooltip-class').tooltip({
+    selector: '[data-toggle=tooltip]',
+    container: 'body'
+  })
+
+})
