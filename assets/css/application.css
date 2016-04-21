@@ -1,13 +1,16 @@
-.list-inline .glyphicon {
-  top: 25px;
+li span {
+  vertical-align: middle;
 }
 
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
+.band-bar {
+  vertical-align: top;
 }
 
-ul.dropdown-menu {
-  li {
-    background-color: inherit;
+@media (max-width: 490px) {
+  .show-bands {
+    font-size: 15vmin;
+  }
+  .dropdown-menu {
+    min-width: 0;
   }
 }

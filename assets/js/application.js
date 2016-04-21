@@ -6,14 +6,14 @@ function band_btns(){
   for(band in static_bands){
     if(bands.length<2){
       if(band != 'gold' && band != 'silver'){
-        html_string += '<li><span class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</span></li>\n'
+        html_string += '<button class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</button>\n'
       }
-    } else if(bands.length == 3){
+    } else if(bands.length >= 3){
       if(band != 'black' && band != 'orange' && band != 'white'){
-        html_string += '<li><span class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</span></li>\n'
+        html_string += '<button class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</button>\n'
       }
     } else {
-      html_string += '<li><span class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</span></li>\n'
+      html_string += '<button class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</button>\n'
     }
   }
   return html_string
@@ -22,7 +22,7 @@ function band_btns(){
 function add_band_btn(){
   if(bands.length<5){
     // creates the button for adding bands from the inside out
-    dropdown_list_html = '<ul class="dropdown-menu" aria-labelledby="add_band_btn">'+band_btns()+'</ul>'
+    dropdown_list_html = '<div class="dropdown-menu" aria-labelledby="add_band_btn"><div class="center-block">'+band_btns()+'</div></div>'
     add_band_btn_html = '<button class="btn btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Add Band">+</button>'
     effect_span_html = '<span class="tooltip-class dropdown-toggle" data-toggle="dropdown" id="add_band_btn" aria-haspopup="true">'+add_band_btn_html+'</span>'
     dropdown_span_html = '<span class="dropdown">'+effect_span_html+dropdown_list_html+'</span>'
@@ -37,8 +37,8 @@ function show_bands(){
   for(band in bands){
     position = parseInt(band) + 1
     band = bands[band]
-    if(position != 1 && position == bands.length){ html_string += '<li>&nbsp;</li>' }
-    band_html = '<span class="tooltip-class"><span style="color: '+band.color+';" data-toggle="tooltip" data-placement="top" data-original-title="'+band.color+'">|</span></span>'
+    if(position > 2 && position == bands.length){ html_string += '<li>&nbsp;</li>' }
+    band_html = '<span class="tooltip-class"><span class="band-bar" style="color: '+band.color+';" data-toggle="tooltip" data-placement="top" data-original-title="'+band.color+'">|</span></span>'
     html_string += '<li>'+band_html+'</li>'
   }
   html_string = '<li><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></li>'
