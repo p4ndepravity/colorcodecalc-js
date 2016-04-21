@@ -20,9 +20,13 @@ function band_btns(){
 }
 
 function add_band_btn(){
-  if(bands.length<4){
-    html_string = '<span class="dropdown"><span class="tooltip-class dropdown-toggle" data-toggle="dropdown" id="add_band_btn" aria-haspopup="true"><button class="btn btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Add Band">+</button></span><ul class="dropdown-menu" aria-labelledby="add_band_btn">'+band_btns()+'</ul></span>'
-    return html_string
+  if(bands.length<5){
+    // creates the button for adding bands from the inside out
+    dropdown_list_html = '<ul class="dropdown-menu" aria-labelledby="add_band_btn">'+band_btns()+'</ul>'
+    add_band_btn_html = '<button class="btn btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Add Band">+</button>'
+    effect_span_html = '<span class="tooltip-class dropdown-toggle" data-toggle="dropdown" id="add_band_btn" aria-haspopup="true">'+add_band_btn_html+'</span>'
+    dropdown_span_html = '<span class="dropdown">'+effect_span_html+dropdown_list_html+'</span>'
+    return dropdown_span_html
   } else {
     return ''
   }
@@ -31,7 +35,9 @@ function add_band_btn(){
 function show_bands(){
   html_string = ''
   for(band in bands){
+    position = parseInt(band) + 1
     band = bands[band]
+    if(position != 1 && position == bands.length){ html_string += '<li>&nbsp;</li>' }
     band_html = '<span class="tooltip-class"><span style="color: '+band.color+';" data-toggle="tooltip" data-placement="top" data-original-title="'+band.color+'">|</span></span>'
     html_string += '<li>'+band_html+'</li>'
   }
@@ -44,26 +50,28 @@ function show_bands(){
 
 function add_band(color){
   bands.push(static_bands[color])
-  if(bands.length == 4){
-    CalculateOhmValue(bands[0].color, bands[1].color, bands[2].color, bands[3].color);
-  } else {
-    show_bands()
-  }
+  calculate_ohm_value_call()
   return
 }
 
 function remove_band(index){
   bands.splice(index, 1)
-  show_bands()
-  if(bands.length == 4){
-    CalculateOhmValue(bands[0].color, bands[1].color, bands[2].color, bands[3].color)
-  } else {
-    show_bands()
-  }
+  calculate_ohm_value_call()
   return
 }
 
-function CalculateOhmValue(bandAColor, bandBColor, bandCColor, bandDColor){
+function calculate_ohm_value_call(){
+  colors = []
+  for(band in bands){
+    colors.push(bands[band].color)
+  }
+  CalculateOhmValue(colors[0], colors[1], colors[2], colors[3], colors[4])
+  return
+}
+
+// calculates the resistance of a resistor in ohms
+// based on the colors of the bands up to 5 bands
+function CalculateOhmValue(bandAColor, bandBColor, bandCColor, bandDColor, bandFColor){
   resistance = 0
   min_resistance = 0
   max_resistance = 0
@@ -81,6 +89,12 @@ function CalculateOhmValue(bandAColor, bandBColor, bandCColor, bandDColor){
           d = static_bands[bandDColor]
           min_resistance = resistance * (1 - d.tolerance)
           max_resistance = resistance * (1 + d.tolerance)
+          if(bandFColor){ // in the event of 5 bands, the arithmetic varies slightly
+            f = static_bands[bandDColor]
+            resistance = ((a.sig_figs*100)+(b.sig_figs*10)+c.sig_figs)*d.multiplier
+            min_resistance = resistance * (1 - f.tolerance)
+            max_resistance = resistance * (1 + f.tolerance)
+          }
         }
       }
     }
@@ -95,7 +109,7 @@ function CalculateOhmValue(bandAColor, bandBColor, bandCColor, bandDColor){
 
 function reset(){
   bands = []
-  CalculateOhmValue()
+  calculate_ohm_value_call()
   return
 }
 
@@ -105,5 +119,7 @@ $(document).ready(function(){
     selector: '[data-toggle=tooltip]',
     container: 'body'
   })
+
+  calculate_ohm_value_call()
 
 })
