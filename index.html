@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ColorcodecalcJs</title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- application css -->
+    <link rel="stylesheet" href='assets/css/application.css'>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <!-- application js -->
+    <script src='assets/js/static_bands.js'></script>
+    <script src='assets/js/application.js'></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  <body>
+  
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="page-header">Color Code Calculator <small>for resistors</small></h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 text-center" style="font-size: 100px;">
+        <ul class="list-inline" id="band-list">
+          <script>
+            show_bands()
+            add_band_btn()
+          </script>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col-lg-4 col-lg-offset-4'>
+        <div class='panel panel-default'>
+          <div class='panel-body'>
+            <form>
+              <div class="form-group">
+                <label for="idealResistance">Ideal Resistance</label>
+                <input type="text" name="idealResistance" id="idealResistance" class="form-control" readonly="readonly">
+              </div>
+              <div class="form-group">
+                <label for="lowResistance">Minimum Resistance</label>
+                <input type="text" name="idealResistance" id="minResistance" class="form-control" readonly="readonly">
+              </div>
+              <div class="form-group">
+                <label for="hiResistance">Maximum Resistance</label>
+                <input type="text" name="idealResistance" id="maxResistance" class="form-control" readonly="readonly">
+              </div>
+            </form>
+          </div>
+          <div class="panel-footer">
+            <button onclick="reset();" class="btn btn-default">Reset</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

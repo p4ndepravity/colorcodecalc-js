@@ -1,0 +1,13 @@
+.list-inline .glyphicon {
+  top: 25px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+ul.dropdown-menu {
+  li {
+    background-color: inherit;
+  }
+}

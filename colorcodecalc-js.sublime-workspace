@@ -1,0 +1,406 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"transa",
+				"transactions"
+			],
+			[
+				"transac",
+				"transaction_types"
+			],
+			[
+				"trans",
+				"transactionTypeid"
+			],
+			[
+				"change",
+				"change_table"
+			],
+			[
+				"tra",
+				"transactions"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Trenton/ownCloud/main/dev/js/colorcodecalc-js"
+	],
+	"file_history":
+	[
+		"/C/Users/Trenton/ownCloud/main/dev/js/jquery notes.js",
+		"/C/Sites/colorcodecalc-js/app/assets/javascripts/main.js",
+		"/C/Sites/colorcodecalc-js/app/views/main/index.html.erb",
+		"/C/Sites/colorcodecalculator/app/assets/javascripts/application/application.coffee",
+		"/C/Sites/colorcodecalculator/app/assets/javascripts/resistors.coffee",
+		"/C/Sites/colorcodecalculator/app/assets/javascripts/static_pages.coffee",
+		"/C/Sites/colorcodecalc-js/app/views/layouts/application.html.erb",
+		"/C/Sites/colorcodecalc-js/config/routes.rb",
+		"/C/Sites/colorcodecalc-js/Gemfile",
+		"/C/Sites/colorcodecalculator/Gemfile",
+		"/C/Sites/colorcodecalculator/test/models/resistor_test.rb",
+		"/C/Sites/colorcodecalculator/test/controllers/static_pages_controller_test.rb",
+		"/C/Sites/colorcodecalculator/app/models/resistor.rb",
+		"/C/Sites/colorcodecalculator/test/fixtures/bands.yml",
+		"/C/Sites/colorcodecalculator/app/controllers/resistors_controller.rb",
+		"/C/Sites/colorcodecalculator/.instructions",
+		"/C/Sites/colorcodecalculator/app/controllers/static_pages_controller.rb",
+		"/C/Sites/colorcodecalculator/test/controllers/resistors_controller_test.rb",
+		"/C/Sites/colorcodecalculator/app/views/layouts/application.html.erb",
+		"/C/Sites/colorcodecalculator/app/views/static_pages/home.html.erb",
+		"/C/Sites/colorcodecalculator/app/helpers/static_pages_helper.rb",
+		"/C/Sites/colorcodecalculator/config/routes.rb",
+		"/C/Sites/colorcodecalculator/db/schema.rb",
+		"/C/Sites/colorcodecalculator/db/seeds.rb",
+		"/C/Sites/colorcodecalculator/app/helpers/application_helper.rb",
+		"/C/Sites/librarymanager/app/controllers/books_controller.rb",
+		"/C/Sites/librarymanager/app/views/application/_flash.html.erb",
+		"/C/Sites/colorcodecalculator/app/views/application/_flash.html.erb",
+		"/C/Sites/librarymanager/app/views/pages/index.html.erb",
+		"/C/Sites/librarymanager/app/helpers/application_helper.rb",
+		"/C/Sites/colorcodecalculator/app/views/application/_reset_link.html.erb",
+		"/C/Sites/librarymanager/app/views/application/_icon.html.erb",
+		"/C/Sites/colorcodecalculator/app/views/application/_new_band.html.erb",
+		"/C/Sites/colorcodecalculator/app/views/application/_new_resistor.html.erb",
+		"/C/Sites/colorcodecalculator/app/models/band.rb",
+		"/C/Sites/librarymanager/app/views/application/_check_in_btn.html.erb",
+		"/C/Sites/colorcodecalculator/.gitignore",
+		"/C/Sites/librarymanager/.gitignore",
+		"/C/Sites/librarymanager/app/views/application/_btn.html.erb",
+		"/C/Sites/colorcodecalculator/app/assets/stylesheets/static_pages.scss",
+		"/C/Sites/colorcodecalculator/config/database.yml",
+		"/C/Sites/colorcodecalculator/db/migrate/20160413141957_create_resistors.rb",
+		"/C/Sites/librarymanager/app/helpers/books_helper.rb",
+		"/C/Sites/librarymanager/app/views/books/index.html.erb",
+		"/C/Sites/librarymanager/config/database.yml",
+		"/C/Sites/librarymanager/Procfile",
+		"/C/Sites/librarymanager/Gemfile",
+		"/C/Sites/librarymanager/app/assets/javascripts/application.js",
+		"/C/Sites/colorcodecalculator/app/assets/javascripts/application.js",
+		"/C/Sites/librarymanager/app/assets/javascripts/application/application.coffee",
+		"/C/Sites/librarymanager/app/assets/javascripts/patrons.coffee",
+		"/C/Sites/librarymanager/db/schema.rb",
+		"/C/Sites/colorcodecalculator/db/migrate/20160412203330_change_tolerance_to_decimal.rb",
+		"/C/Sites/colorcodecalculator/app/assets/stylesheets/application.css",
+		"/C/Sites/colorcodecalculator/config/application.rb",
+		"/C/Sites/librarymanager/config/application.rb",
+		"/C/Sites/librarymanager/app/assets/stylesheets/bootstrap.css.erb",
+		"/C/Sites/colorcodecalculator/app/assets/stylesheets/bootstrap.css.erb",
+		"/C/Sites/colorcodecalculator/app/assets/stylesheets/font-awesome/font-awesome.css.erb",
+		"/C/Sites/colorcodecalculator/app/assets/stylesheets/bootstrap/bootstrap.css.erb",
+		"/C/Sites/colorcodecalculator/app/assets/stylesheets/bootstrap/bootstrap.css",
+		"/C/Sites/librarymanager/app/assets/stylesheets/font-awesome.css.erb",
+		"/C/Sites/startbootstrap-bare-1.0.4/index.html",
+		"/C/Sites/colorcodecalculator/db/migrate/20160412175159_add_foreign_key_to_bands.rb",
+		"/C/Sites/colorcodecalculator/db/migrate/20160412174217_change_bands_multiplier_to_decimal.rb",
+		"/C/Sites/librarymanager/db/seeds.rb",
+		"/C/Sites/colorcodecalculator/db/migrate/20160412172823_remove_position_from_band.rb",
+		"/C/Sites/colorcodecalculator/db/migrate/20160412172109_add_index_to_band_color.rb",
+		"/C/Sites/typify/index.html",
+		"/C/Sites/librarymanager/app/views/layouts/application.html.erb",
+		"/C/Sites/startbootstrap-sb-admin-2-1.0.8/pages/index.html",
+		"/C/Sites/librarymanager/config/puma.rb",
+		"/C/Sites/colorcodecalculator/Procfile",
+		"/C/Sites/colorcodecalculator/config/puma.rb",
+		"/C/Sites/librarymanager/config/environment.rb",
+		"/C/Sites/librarymanager/config/environments/production.rb",
+		"/C/Sites/librarymanager/config/environments/development.rb",
+		"/C/Sites/colorcodecalculator/README.md",
+		"/C/Sites/librarymanager/app/controllers/pages_controller.rb",
+		"/C/Sites/librarymanager/app/views/pages/signup.html.erb",
+		"/C/Sites/librarymanager/app/views/patrons/new.html.erb",
+		"/C/Sites/librarymanager/config/routes.rb",
+		"/C/Sites/librarymanager/app/controllers/patrons_controller.rb",
+		"/C/Sites/librarymanager/app/models/patron.rb",
+		"/C/Sites/librarymanager/db/migrate/20160411211504_add_password_digest_to_users.rb",
+		"/C/Sites/librarymanager/db/migrate/20160411205308_create_users.rb",
+		"/C/Sites/librarymanager/app/views/patrons/index.html.erb",
+		"/C/Sites/librarymanager/app/views/application/_check_box.html.erb",
+		"/C/Sites/librarymanager/app/controllers/application_controller.rb",
+		"/C/Sites/librarymanager/app/assets/javascripts/pages.coffee",
+		"/C/Sites/librarymanager/app/models/book.rb",
+		"/C/Users/Trenton/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Trenton/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Sites/librarymanager/app/views/transactions/index.html.erb",
+		"/C/Sites/librarymanager/app/controllers/transactions_controller.rb",
+		"/C/Sites/librarymanager/config/initializers/ssl_configuration.rb",
+		"/C/Sites/librarymanager/app/views/patrons/_show.html.erb",
+		"/C/Sites/librarymanager/app/views/books/_show.html.erb",
+		"/C/Sites/librarymanager/app/views/books/show.html.erb",
+		"/C/Sites/librarymanager/app/views/patrons/show.html.erb",
+		"/C/Sites/librarymanager/app/views/application/_form_btns.html.erb",
+		"/C/Sites/librarymanager/app/views/application/_modal.html.erb",
+		"/C/Sites/librarymanager/app/views/books/_form.html.erb",
+		"/C/Sites/librarymanager/app/views/books/edit.html.erb",
+		"/C/Sites/librarymanager/app/views/patrons/_form.html.erb",
+		"/C/Sites/librarymanager/app/views/patrons/edit.html.erb",
+		"/C/Sites/librarymanager/app/views/patrons/edit.js.erb",
+		"/C/Sites/librarymanager/app/models/transaction.rb",
+		"/C/Sites/librarymanager/app/views/books/show.js.erb",
+		"/C/Sites/librarymanager/app/views/books/edit.js.erb",
+		"/C/Sites/librarymanager/app/views/books/new.js.erb",
+		"/C/Sites/librarymanager/app/views/transactions/new.js.erb",
+		"/C/Sites/librarymanager/app/views/patrons/show.js.erb",
+		"/C/Sites/librarymanager/app/views/patrons/new.js.erb",
+		"/C/Sites/librarymanager/app/views/layouts/_icon.html.erb",
+		"/C/Sites/librarymanager/app/assets/javascripts/books.coffee",
+		"/C/Sites/librarymanager/app/views/layouts/_btn.html.erb",
+		"/C/Sites/librarymanager/app/views/layouts/_check_in_btn.html.erb",
+		"/C/Sites/librarymanager/app/assets/javascripts/transactions.coffee",
+		"/C/Sites/librarymanager/app/views/transactions/_checkOut.html.erb",
+		"/C/Sites/librarymanager/app/views/books/_checkOut.html.erb",
+		"/C/Sites/librarymanager/app/views/books/checkOut.js.erb",
+		"/C/Sites/librarymanager/app/views/books/checkIn.js.erb",
+		"/C/Sites/librarymanager/app/views/pages/new.js.erb",
+		"/C/Sites/librarymanager/app/views/pages/_patronForm.html.erb",
+		"/C/Sites/librarymanager/app/views/pages/_bookForm.html.erb",
+		"/C/Sites/librarymanager/app/views/pages/new_patron.js.erb",
+		"/C/Sites/librarymanager/app/views/pages/_check_in.html.erb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<current file>",
+			"C:\\Sites\\librarymanager\\app\\views",
+			"C:\\Sites\\librarymanager\\app\\assets",
+			"C:\\Sites\\librarymanager\\app\\assets\\stylesheets",
+			"<current file>",
+			"",
+			"C:\\Sites\\librarymanager\\app\\assets",
+			"C:\\Sites\\librarymanager\\app\\assets\\javascripts",
+			"C:\\Sites\\librarymanager\\app\\assets",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"brown",
+			"black",
+			"MyString",
+			"silver",
+			"gold",
+			")}\",",
+			"lowResistance",
+			"browwhiten",
+			"brown",
+			"isbn_10",
+			"author_first_name",
+			"author_last_name",
+			"|",
+			"src",
+			"right",
+			"src",
+			"asset_path '",
+			"chevron",
+			"glyphicon",
+			"src",
+			"published_date",
+			"\"\n",
+			"}\"\n",
+			"%>\n",
+			"page-wrapper",
+			"unstyled",
+			"btn",
+			"@media (min",
+			"featureNode",
+			"sDom",
+			"dom",
+			"sfilterinput",
+			"_fnFeatureHtmlFilter",
+			"sdom",
+			"Filter",
+			"_fnFeatureHtmlFilter",
+			"filter",
+			".dataTables_filter",
+			"select",
+			"patron",
+			":before",
+			"::before",
+			"::after",
+			"button-groups",
+			"::after",
+			"::before",
+			"modal",
+			"table-bordered",
+			"dataTable_",
+			"panel-body",
+			"dataTable_wrapper",
+			"wrapper",
+			"DataTable",
+			"	",
+			"thead",
+			"dataTables-example",
+			"dataTables",
+			"dataTables-example",
+			"/*",
+			"%>\n",
+			"Dashboard",
+			"envelope",
+			"delete"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"asset_path 'assets/fonts/",
+			"asset_path 'fonts/",
+			"book",
+			"  "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "colorcodecalc-js.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
