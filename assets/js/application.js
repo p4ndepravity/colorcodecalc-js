@@ -1,19 +1,16 @@
 
 bands = []
 
+function band_btn_html(color){
+  html_string = '<button class="btn btn-default btn-block band_btn" style="color: '+color+';" onclick="add_band($(this).text());">'+color+'</button>\n'
+  return html_string
+}
+
 function band_btns(){
   html_string = ''
   for(band in static_bands){
-    if(bands.length<2){
-      if(band != 'gold' && band != 'silver'){
-        html_string += '<button class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</button>\n'
-      }
-    } else if(bands.length >= 3){
-      if(band != 'black' && band != 'orange' && band != 'white'){
-        html_string += '<button class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</button>\n'
-      }
-    } else {
-      html_string += '<button class="btn btn-default btn-block band_btn" style="color: '+band+';" onclick="add_band($(this).text());">'+band+'</button>\n'
+    if(!((bands.length<2 && (band == 'gold' || band == 'silver')) || (bands.length >= 3 && (band == 'black' || band == 'orange' || band == 'white')))){
+      html_string += band_btn_html(band)
     }
   }
   return html_string
